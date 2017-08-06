@@ -47,7 +47,7 @@
                 Если это первый запуск, то проинициализировать currentBreath
                 Иначе
                     Поменять значение currentBreath на следующее
-                    Запустить setTimer
+                    Запустить setTimerw
             */
 
             if(this._state.currentBreath === null) {
