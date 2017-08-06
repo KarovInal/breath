@@ -5,15 +5,30 @@ const SETTING_FOR_BREATH = function() {
         0: [
             {
                 name: 'Вдох',
-                time: 1000,
+                time: 5000,
                 id: 0
             }, {
                 name: 'Задержка',
-                time: 1000,
+                time: 2000,
                 id: 1
             }, {
                 name: 'Выдох',
-                time: 1000,
+                time: 4000,
+                id: 2
+            },
+        ], 
+        1: [
+            {
+                name: 'Вдох',
+                time: 100,
+                id: 0
+            }, {
+                name: 'Задержка',
+                time: 100,
+                id: 1
+            }, {
+                name: 'Выдох',
+                time: 100,
                 id: 2
             },
         ]
