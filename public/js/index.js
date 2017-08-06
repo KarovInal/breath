@@ -1,1 +1,5 @@
-console.log('init app');
+'use strict'
+
+var meditate = new Breath();
+
+meditate.tubler();
