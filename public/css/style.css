@@ -1,6 +1,69 @@
-.circle {
-    width: 100px;
-    height: 100px;
+html, body {
+    height:100%;
+} 
+
+body {
+    margin: 0;
+    color: white;
+    font-family: Roboto;
+    text-align: center;
+}
+
+
+h1, p {
+    margin: 0;
+}
+
+h1 {
+    font-size: 40pt;
+    font-weight: 900;
+    margin-top: 80px;
+}
+
+p {
+    font-size: 15pt;
+}
+
+.main-description {    
+    font-weight: 300;
+    margin-top: 10px;
+}
+
+.main-status {
+    font-weight: 300;
+    margin-top: 20px;
+}
+
+.main-container {
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    background: linear-gradient(to top right, #8AB0FF, #FF004E);
+    background: -webkit-linear-gradient(to top right, #8AB0FF, #FF004E);
+    background: -moz-linear-gradient(to top right, #8AB0FF, #FF004E);
+    background: -o-linear-gradient(to top right, #8AB0FF, #FF004E);
+}
+
+.circle-container {
+    margin: 0 auto;
+    margin-top: 20px;
+    max-width: 350px;
+    padding: 40px;
+    border: solid rgba(0, 0, 0, .2) 1px;
     border-radius: 100%;
-    background-color: black;
+    cursor: pointer;
+}
+
+.circle {
+    width: 100%;
+    height: 0;
+    cursor: pointer;
+    font-size: 20pt;
+    padding: 50% 0px;
+    border-radius: 100%;
+    background-color: #DBDBDB;
+    box-shadow: 0px 0px 50px 1px rgba(0, 0, 0, .4);
+    -webkit-box-shadow: 0px 0px 50px 1px rgba(0, 0, 0, .4);
+    -moz-linear-box-shadow: 0px 0px 50px 1px rgba(0, 0, 0, .4);
+    -o-linear-box-shadow: 0px 0px 50px 1px rgba(0, 0, 0, .4);
 }

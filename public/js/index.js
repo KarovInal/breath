@@ -1,4 +1,6 @@
 'use strict'
 
 var meditate = new Breath();
-meditate.tumbler();
+document.querySelector('.circle-container').addEventListener('click', function() {
+    meditate.tumbler();
+})

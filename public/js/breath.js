@@ -32,10 +32,10 @@
             */
 
             this._state.isStart = !this._state.isStart;
-            document.querySelector('#start').innerHTML = this._state.isStart ? 'Стоп' : 'Старт';
         },
         setTimer: function() {
             /*
+                Запустить анимацию
                 Запустить таймер со значением currentBreath.time
                 И записать значение setTimeout в _state.currentTimerId
                 В коллбек функции, запустить startBreath
@@ -62,6 +62,7 @@
                 this._state.currentBreath = this._settings[currentSetting][nextIdBreath];
             }
 
+            document.querySelector('.main-status').innerHTML = this._state.currentBreath.name;
             return this.setTimer();
         },
         stopBreath: function() {
@@ -70,11 +71,13 @@
 
             clearTimeout(this._state.currentTimerId)
 
+            document.querySelector('.main-status').innerHTML = ''
+
             anime({
                 targets: '.circle',
                 scale: 1,
                 duration: 1000,
-                backgroundColor: "#000",
+                backgroundColor: '#DBDBDB',
                 easing: 'linear'
             })
         },
@@ -87,14 +90,14 @@
                     return anime({
                         targets: '.circle',
                         scale: [0, 1],
-                        backgroundColor: '#000',
+                        backgroundColor: '#DBDBDB',
                         duration: this._state.currentBreath.time,
                         easing: 'linear'
                     })
                 case 1:
                     return anime({
                         targets: '.circle',
-                        backgroundColor: '#FF324A',
+                        backgroundColor: '#0056FB',
                         duration: this._state.currentBreath.time,
                         easing: 'linear'
                     })
@@ -102,7 +105,7 @@
                     return anime({
                         targets: '.circle',
                         scale: 0,
-                        backgroundColor: '#000',
+                        backgroundColor: '#DBDBDB',
                         duration: this._state.currentBreath.time,
                         easing: 'linear'
                     })
