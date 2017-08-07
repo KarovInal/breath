@@ -71,7 +71,7 @@
 
             clearTimeout(this._state.currentTimerId)
 
-            document.querySelector('.main-status').innerHTML = ''
+            document.querySelector('.main-status').innerHTML = 'Начать';
 
             anime({
                 targets: '.circle',
