@@ -41,7 +41,7 @@ p {
     overflow-y: scroll;
     overflow-x: hidden;
     box-sizing: border-box;
-    background: linear-gradient(to top right, #8AB0FF, #FF004E);
+    background: linear-gradient(to top right, #789EE1, #FF004E);
     background: -webkit-linear-gradient(to top right, #8AB0FF, #FF004E);
     background: -moz-linear-gradient(to top right, #8AB0FF, #FF004E);
     background: -o-linear-gradient(to top right, #8AB0FF, #FF004E);
@@ -64,7 +64,7 @@ p {
     font-size: 20pt;
     padding: 50% 0px;
     border-radius: 100%;
-    background-color: #DBDBDB;
+    background-color: #D7D7D7;
     box-shadow: 0px 0px 50px 1px rgba(0, 0, 0, .4);
     -webkit-box-shadow: 0px 0px 50px 1px rgba(0, 0, 0, .4);
     -moz-linear-box-shadow: 0px 0px 50px 1px rgba(0, 0, 0, .4);
