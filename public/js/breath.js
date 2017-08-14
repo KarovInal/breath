@@ -1,6 +1,9 @@
 'use strict'
 
 ;(function() {
+    //conf
+    //conf
+    //conf
     function Breath() {
         this._state = {
             isStart: false,
