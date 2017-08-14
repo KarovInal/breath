@@ -16,8 +16,8 @@
         tumbler: function() {
             /*
                 Проверка значения isStart.
-                    true завершить таймер
-                    false создать таймер
+                    - true завершить таймер
+                    - false создать таймер
             */
 
             if(this._state.isStart) {
