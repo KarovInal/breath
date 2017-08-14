@@ -1,9 +1,8 @@
-'use strict'
-
 ;(function() {
-    //conf
-    //conf
-    //conf
+    'use strict'
+
+    //conflict comment
+    
     function Breath() {
         this._state = {
             isStart: false,
@@ -19,7 +18,7 @@
         tumbler: function() {
             /*
                 Проверка значения isStart.
-                    ->true завершить таймер
+                    -> true завершить таймер
                     -> false создать таймер
             */
 
