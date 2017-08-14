@@ -17,6 +17,7 @@
     var breathMixin = {
         tumbler: function() {
             /*
+                Branch test
                 Проверка значения isStart.
                     -> true завершить таймер
                     -> false создать таймер
