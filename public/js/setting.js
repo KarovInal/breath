@@ -31,6 +31,21 @@ const SETTING_FOR_BREATH = function() {
                 time: 100,
                 id: 2
             },
+        ],
+        2: [
+            {
+                name: 'Вдох',
+                time: 6000,
+                id: 0
+            }, {
+                name: 'Задержка',
+                time: 2000,
+                id: 1
+            }, {
+                name: 'Выдох',
+                time: 6000,
+                id: 2
+            },
         ]
     }
 }();

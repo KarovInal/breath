@@ -17,7 +17,6 @@
     var breathMixin = {
         tumbler: function() {
             /*
-                Branch test
                 Проверка значения isStart.
                     -> true завершить таймер
                     -> false создать таймер
@@ -43,6 +42,7 @@
                 И записать значение setTimeout в _state.currentTimerId
                 В коллбек функции, запустить startBreath
             */
+
             this._state.currentAnimate = this.animateBreath();
             this._state.currentTimerId = setTimeout(function() {
                 return this.startBreath();
@@ -70,7 +70,7 @@
         },
         stopBreath: function() {
             this._state.currentBreath = null;
-            this._state.currentAnimate.pause();
+            ( this._state.currentAnimate ) ? this._state.currentAnimate.pause() : null;
 
             clearTimeout(this._state.currentTimerId)
 
