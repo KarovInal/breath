@@ -18,6 +18,5 @@ let breath = new Breath(store);
 breath.init();
 
 store.subscribe(() => {
-  console.log("Console - " + 
-  store.getState());
+  console.log("Console - " + store.getState());
 })
