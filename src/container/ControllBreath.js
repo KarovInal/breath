@@ -20,21 +20,27 @@ export default class ControllBreath {
 
     switch(currentControll) {
       case PLAY:
-        this.store.dispatch(setStatusBreath(PAUSE))
+        this.store.dispatch(setStatusBreath(PAUSE));
         return;
       case PAUSE:
+        this.store.dispatch(setStatusBreath(PLAY));
+        return;
+      case RESTART:
+        this.store.dispatch(setStatusBreath(PLAY));
+        return;
+      default:
         this.store.dispatch(setStatusBreath(PLAY))
         return;
     }
   }
 
   onClickRestart({ target }) {
-    console.log(target);
+    this.store.dispatch(setStatusBreath(RESTART));
   }
 
   pausePlayUpdate() {
     let currentControll = getCurrentControll(this.store);
-
+    
     this.$pausePlay.updateControll(currentControll);
   }
 

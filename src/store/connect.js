@@ -5,3 +5,7 @@ export function getCurrentBreath(store) {
 export function getCurrentControll(store) {
   return store.getState().controllBreath
 }
+
+export function getListOfSettings(store) {
+  return store.getState().settings;
+}

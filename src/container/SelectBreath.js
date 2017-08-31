@@ -1,7 +1,7 @@
 import { $$ } from '../utils';
 import { setCurrentBreath, setStatusBreath } from '../actions';
 import { getCurrentBreath } from '../store/connect.js';
-import { PAUSE } from '../constants/status.js';
+import { PAUSE, RESTART } from '../constants/status.js';
 
 export default class SelectBreath {
   constructor(store) {
@@ -14,12 +14,11 @@ export default class SelectBreath {
   onClickSelector({ target }) {
     //установить новую настройку для дыхания
     this.store.dispatch(setCurrentBreath(target.value));
-    
-    //поставить духание на паузу
+
     this.store.dispatch(setStatusBreath(PAUSE));
   }
 
-  onChangeOption(store) {
+  onChangeOption() {
     let newCurrentBreath = getCurrentBreath(this.store);
     
     if(newCurrentBreath !== this.currentBreath) {

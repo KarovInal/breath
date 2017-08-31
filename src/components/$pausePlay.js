@@ -20,10 +20,13 @@ export default class $pausePlay {
         this.controllEmpty();
         this.$controllBreath.innerHTML = PLAY;
         return;        
-      default:
+      case RESTART:
         this.controllEmpty();
         this.$controllBreath.innerHTML = PLAY;
-        return;        
+        return;
+      default:
+        this.controllEmpty();
+        this.$controllBreath.innerHTML = 'NONE';
     }
   }
 
