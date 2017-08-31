@@ -1,4 +1,4 @@
-export const SET_CURRENT_BREATH = 'SET_CURRENT_BREATH';
+import { SET_CURRENT_BREATH } from '../constants/settings.js';
 
 export function setCurrentBreath(currentBreath) {
   return {

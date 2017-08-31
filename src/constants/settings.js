@@ -2,6 +2,8 @@ export const EASY = 'EASY';
 export const MIDDLE = 'MIDDLE';
 export const PRO = 'PRO';
 
+export const SET_CURRENT_BREATH = 'SET_CURRENT_BREATH';
+
 const SETTINGS = {
   EASY: [
     { value: 0, duration: 0, delay: 0, easing: 'easeOut' },

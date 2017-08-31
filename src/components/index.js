@@ -1,5 +1,5 @@
-import SelectBreath from './SelectBreath.js';
+import $pausePlay from './$pausePlay';
 
 export {
-  SelectBreath
+  $pausePlay
 }
