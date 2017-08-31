@@ -14,19 +14,19 @@ export default class $pausePlay {
     switch(status) {
       case PLAY:
         this.controllEmpty();
-        this.$controllBreath.innerHTML = PAUSE;
+        this.$controllBreath.innerHTML = 'Пауза';
         return;
       case PAUSE:
         this.controllEmpty();
-        this.$controllBreath.innerHTML = PLAY;
+        this.$controllBreath.innerHTML = 'Начать';
         return;        
       case RESTART:
         this.controllEmpty();
-        this.$controllBreath.innerHTML = PLAY;
+        this.$controllBreath.innerHTML = 'Начать';
         return;
       default:
         this.controllEmpty();
-        this.$controllBreath.innerHTML = 'NONE';
+        this.$controllBreath.innerHTML = 'Начать';
     }
   }
 

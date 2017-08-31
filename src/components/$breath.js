@@ -17,9 +17,10 @@ export default class $breath {
     this.currentSetting = setting;
     this.currentAnime = anime({
       targets: '.breath-element',
-      scale: this.settings[this.currentSetting],
+      scale: this.settings[this.currentSetting].setting,
       autoplay: false,
-      loop: true
+      loop: true,
+      backgroundColor: this.settings[this.currentSetting].colors
     });
   }
 
