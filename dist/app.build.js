@@ -123,11 +123,11 @@ var SETTINGS = {
     'setting': [{ value: .3, duration: 0, delay: 0, easing: 'linear' }, { value: 1, duration: 3000, delay: 0, easing: 'linear' }, { value: .3, duration: 3000, delay: 0, easing: 'linear' }]
   },
   MIDDLE: {
-    colors: [{ value: '#000' }, { value: '#000', duration: 5000 }, { value: 'rgb(0,0,250)', duration: 3000 }, { value: '#000', duration: 5000 }],
+    colors: [{ value: '#000' }, { value: '#000', duration: 5000, easing: 'linear' }, { value: 'rgb(0,0,250)', duration: 3000, easing: 'linear' }, { value: '#000', duration: 5000, easing: 'linear' }],
     'setting': [{ value: .3, duration: 0, delay: 0, easing: 'linear' }, { value: 1, duration: 5000, delay: 0, easing: 'linear' }, { value: 1, duration: 3000, delay: 0, easing: 'linear' }, { value: .3, duration: 5000, delay: 0, easing: 'linear' }]
   },
   PRO: {
-    colors: [{ value: '#000' }, { value: '#000', duration: 5000 }, { value: 'rgb(0,0,250)', duration: 3000 }, { value: '#000', duration: 5000 }, { value: 'rgb(0,250,0)', duration: 3000 }],
+    colors: [{ value: '#000', easing: 'linear' }, { value: '#000', duration: 5000, easing: 'linear' }, { value: 'rgb(0,0,250)', duration: 3000, easing: 'linear' }, { value: '#000', duration: 5000, easing: 'linear' }, { value: 'rgb(0,250,0)', duration: 3000, easing: 'linear' }],
     'setting': [{ value: .3, duration: 0, delay: 0, easing: 'linear' }, { value: 1, duration: 5000, delay: 0, easing: 'linear' }, { value: 1, duration: 3000, delay: 0, easing: 'linear' }, { value: .3, duration: 5000, delay: 0, easing: 'linear' }, { value: .3, duration: 3000, delay: 0, easing: 'linear' }]
   }
 };
@@ -2167,6 +2167,16 @@ var _utils = __webpack_require__(1);
 
 var _status = __webpack_require__(0);
 
+var _play = __webpack_require__(49);
+
+var _play2 = _interopRequireDefault(_play);
+
+var _pause = __webpack_require__(48);
+
+var _pause2 = _interopRequireDefault(_pause);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 var $pausePlay = function () {
@@ -2187,19 +2197,19 @@ var $pausePlay = function () {
       switch (status) {
         case _status.PLAY:
           this.controllEmpty();
-          this.$controllBreath.innerHTML = 'Пауза';
+          this.$controllBreath.innerHTML = '\u041F\u0430\u0443\u0437\u0430 <img class="status-icon" src=' + _pause2.default + ' >';
           return;
         case _status.PAUSE:
           this.controllEmpty();
-          this.$controllBreath.innerHTML = 'Начать';
+          this.$controllBreath.innerHTML = '\u041D\u0430\u0447\u0430\u0442\u044C <img class="status-icon" src=' + _play2.default + ' >';
           return;
         case _status.RESTART:
           this.controllEmpty();
-          this.$controllBreath.innerHTML = 'Начать';
+          this.$controllBreath.innerHTML = '\u041D\u0430\u0447\u0430\u0442\u044C <img class="status-icon" src=' + _play2.default + ' >';
           return;
         default:
           this.controllEmpty();
-          this.$controllBreath.innerHTML = 'Начать';
+          this.$controllBreath.innerHTML = '\u041D\u0430\u0447\u0430\u0442\u044C <img class="status-icon" src=' + _play2.default + ' >';
       }
     }
   }, {
@@ -2225,10 +2235,6 @@ exports.default = $pausePlay;
 
 "use strict";
 
-
-var _utils = __webpack_require__(1);
-
-var _status = __webpack_require__(0);
 
 /***/ }),
 /* 37 */
@@ -2503,10 +2509,6 @@ controllBreath.addEvents();
 var breath = new _container.Breath(store);
 breath.init();
 
-store.subscribe(function () {
-  console.log("Console - " + store.getState());
-});
-
 /***/ }),
 /* 42 */
 /***/ (function(module, exports, __webpack_require__) {
@@ -2652,6 +2654,18 @@ Object.defineProperty(exports, "__esModule", {
 exports.default = function (selector) {
   return document.querySelectorAll(selector);
 };
+
+/***/ }),
+/* 48 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "./img/pause.png";
+
+/***/ }),
+/* 49 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "./img/play.png";
 
 /***/ })
 /******/ ]);

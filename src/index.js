@@ -16,7 +16,3 @@ controllBreath.addEvents();
 
 let breath = new Breath(store);
 breath.init();
-
-store.subscribe(() => {
-  console.log("Console - " + store.getState());
-})

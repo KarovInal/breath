@@ -1,6 +1,60 @@
-.breath-element {
-  width: 50px;
-  height: 50px;
+body {
+  background-color: rgb(235, 235, 235);
+  font-family: Roboto, sans-serif;
+}
+
+.breath-wrap {
+  max-width: 200px;
+  height: auto;
+  margin: 0 auto;
   border-radius: 50%;
+  border: solid #474747 1px;
+}
+
+.breath-element {
+  position: relative;
+  border-radius: 50%;
+  width: 100%;
+  height: auto;
+  padding-top: 100%;
   background-color: black;
+}
+
+.controll-breath {
+  text-align: center;
+}
+
+.breath-pause-play {
+  height: 30px;
+  background-color: rgb(57, 57, 57);
+  border-radius: 20px;
+  margin: 0 auto;
+  margin-top: 20px;
+  color: white;
+  font-size: 21px;
+  font-weight: 600;
+  max-width: 150px;
+  cursor: pointer;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.50);
+  line-height: 30px;
+  vertical-align: middle;
+}
+
+.status-icon {
+  width: 20px;
+  line-height: 30px;
+  vertical-align: middle;
+}
+
+.breath-restart img {
+  width: 30px;
+  height: 30px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.select-breath {
+  display: block;
+  width: 150px;
+  margin: 0 auto;
 }
