@@ -2659,13 +2659,13 @@ exports.default = function (selector) {
 /* 48 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "./img/pause.png";
+module.exports = __webpack_require__.p + "src/img/pause.png";
 
 /***/ }),
 /* 49 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "./img/play.png";
+module.exports = __webpack_require__.p + "src/img/play.png";
 
 /***/ })
 /******/ ]);

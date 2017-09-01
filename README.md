@@ -1,5 +1,9 @@
 # breath
-Приложение для спокойного дыхания
+Приложение для медитативного дыхания
 https://karovinal.github.io/breath/
 
-![screenshot](https://github.com/KarovInal/breath/blob/master/public/img/screen.PNG)
+Целью проекта было научиться использовать redux без react.
+Стек:
+- reduxJS
+- vanilaJS
+- animeJS
